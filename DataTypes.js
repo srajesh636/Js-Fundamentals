@@ -7,7 +7,6 @@ Boolean
 Object
 */
 
-
 // Primary
 var string = "I am a String";
 var number = 10;
@@ -29,3 +28,19 @@ console.log(typeof(x));
 
 var y= null;
 console.log(typeof(y));
+
+
+//Why typeof(null) is a Object  ?
+ //Its is bug in ecmascript .
+
+ // Infinity
+ let a = 10/0 ;
+ console.log(a);
+
+ // Negative Infinity
+ let b = 10/-0;
+ console.log(b);
+
+ // NaN
+ let c= "a"/0;
+ console.log(c);
